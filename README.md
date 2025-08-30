@@ -39,5 +39,49 @@
 
 1. **Clone this repository:**
    ```bash
-   git clone https://github.com/yourusername/rag-pdf-chat.git
-   cd rag-pdf-chat
+   git clone https://github.com/musfiqurrabeg/RAG-QA-Chatbot-with-PDF-and-History.git
+   cd RAG-QA-Chatbot-with-PDF-and-History
+   ```
+2. **Create a .env file and add your HuggingFace token:**
+```bash
+   HF_TOKEN=your_huggingface_token
+```
+
+3. **Run the Streamlit app:**
+```bash
+   streamlit run app.py
+```
+
+4. **Enter your Groq API key and session ID in the app to start asking questions.**
+
+## 🔑 Usage
+
+ - Upload PDFs → Enter your API key → Ask your questions → Get context-aware answers.
+
+ - You can ask follow-up questions referencing earlier questions — the system remembers your session!
+
+ - Ideal for summarizing, studying, or quickly finding information from large PDFs.
+
+ 
+## 🧩 Technical Details
+
+ - Vector Store: Chroma DB
+
+ - Embeddings: HuggingFace all-MiniLM-L6-v2
+
+ - LLM: Groq Gemma2-9B-IT
+
+ - Framework: Streamlit
+
+ - Document Loader: PyPDFLoader
+
+ - Text Splitter: RecursiveCharacterTextSplitter
+
+ - History Management: LangChain ChatMessageHistory
+
+- RAG Architecture: Retrieval-Augmented Generation with history-aware retrieval
+
+
+## 🔥 Why This Project is Unique
+
+Unlike traditional PDF readers, this app answers your questions intelligently and remembers your conversation. It’s not just a search tool—it’s like having a personal assistant for your PDFs!
