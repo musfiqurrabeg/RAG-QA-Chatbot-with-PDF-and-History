@@ -1,7 +1,7 @@
 ## RAG Q&A Conversation With PDF Including Chat History
 
 
-# ----------------------------- IMPORTS -----------------------------
+# ----------------------------- IMPORTS ---------------------------
 # For building the interactive web app
 import streamlit as st
 
